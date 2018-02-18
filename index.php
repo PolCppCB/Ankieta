@@ -68,8 +68,7 @@ require_once 'connect.php';
 $polaczenie = mysqli_connect($host, $user, $password);
 mysqli_query($polaczenie, "SET CHARSET utf8");
 mysqli_query($polaczenie, "SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
-mysqli_select_db($database);
-
+mysqli_select_db($polaczenie, $database);
 
 
 
@@ -86,6 +85,7 @@ $rezultat2 = mysqli_query($polaczenie, $zapytanietxt2);
 $rezultat3 = mysqli_query($polaczenie, $zapytanietxt3);
 $rezultat4 = mysqli_query($polaczenie, $zapytanietxt4);
 $rezultat5 = mysqli_query($polaczenie, $zapytanietxt5);
+
 
 
    if(isSet($_POST["wybor"])){
