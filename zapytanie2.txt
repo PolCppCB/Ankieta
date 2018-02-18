@@ -1,0 +1,1 @@
+UPDATE wybor SET L_Glosow = L_Glosow+1 WHERE ID = 2
